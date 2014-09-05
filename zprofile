@@ -19,7 +19,7 @@ fi
 # Editors
 #
 
-export EDITOR='vim'
+export EDITOR='subl'
 export VISUAL='subl'
 export PAGER='less'
 
@@ -48,6 +48,7 @@ path=(
   /usr/local/{bin,sbin} \
   /usr/local/heroku/bin \
   $HOME/bin
+  $HOME/gsutil
   $path
 )
 

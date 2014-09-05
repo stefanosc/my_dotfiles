@@ -15,6 +15,8 @@ fi
 alias ls='ls -hGF'
 alias ll='ls -hlAGF'
 alias vi='vim'
+alias jfs='fasd -f -e subl '
+alias js='fasd -e subl '
 
 export PGDATA=/usr/local/var/postgres/data/
 
