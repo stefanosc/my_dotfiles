@@ -1,0 +1,86 @@
+{
+	"auto_complete_commit_on_tab": false,
+	"auto_complete_delay": 25,
+	"bold_folder_labels": true,
+	"caret_style": "blink",
+	"color_scheme": "Packages/sublime-monokai-extended-mod/Monokai Extended.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"draw_white_space": "all",
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		".tags*",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.pdf"
+	],
+	"folder_exclude_patterns":
+	[
+		"data",
+		".zeus.sock",
+		".git",
+		".svn",
+		".hg",
+		"CVS",
+		".sass-cache",
+		".bundle",
+		"bundle",
+		".rbx",
+		"script",
+		"tmp",
+		"log"
+	],
+	"font_face": "Inconsolata",
+	"font_size": 20.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"line_padding_bottom": 0.5,
+	"line_padding_top": 0.5,
+	"original_color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"ruby_eval":
+	{
+		"ruby": "/usr/local/var/rbenv/shims/ruby"
+	},
+	"save_on_focus_lost": true,
+	"scroll_past_end": true,
+	"shift_tab_unindent": true,
+	"spell_check": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true,
+	//
+	// Trailing Spaces settings
+	//
+	"trailing_spaces_file_max_size": 1500,
+	"trailing_spaces_include_current_line": false,
+	"trailing_spaces_trim_on_save": true,
+	"trailing_spaces_syntax_ignore":
+	[
+		"Diff",
+		"Markdown"
+	]
+}

@@ -1,0 +1,135 @@
+[
+  { "keys": ["ctrl+shift+."], "command": "erb", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.html.erb, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  },
+  {"keys": ["ctrl+shift+r"], "command": "set_file_type",
+     "args": {"syntax": "Packages/Ruby/Ruby.tmLanguage"}
+  },
+  { "keys": ["super+alt+t"], "command": "title_case" },
+  { "keys": ["super+alt+u"], "command": "upper_case" },
+  { "keys": ["super+alt+l"], "command": "lower_case" },
+  { "keys": ["super+ctrl+shift+d"], "command": "side_bar_duplicate" },
+  { "keys": ["super+ctrl+shift+r"], "command": "side_bar_rename" },
+  { "keys": ["super+ctrl+shift+m"], "command": "side_bar_move" },
+  { "keys": ["super+ctrl+shift+x"], "command": "side_bar_delete" },
+
+  {
+    "keys": ["super+alt+shift+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.66, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  {
+    "keys": ["super+alt+shift+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.33, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  // Select text inside brackets
+  {
+      "keys": ["ctrl+super+s"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect"
+          }
+      }
+  },
+    // Select text including brackets
+  {
+      "keys": ["ctrl+shift+super+s"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect",
+              "args": {"always_include_brackets": true}
+          }
+      }
+  },
+      // Go to left bracket
+  {
+      "keys": ["ctrl+super+left"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect",
+              "args": {"select": "left"}
+          }
+      }
+  },
+  // Go to right bracket
+  {
+      "keys": ["ctrl+super+right"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["__all__"],
+              "command": "bh_modules.bracketselect",
+              "args": {"select": "right"}
+          }
+      }
+  },
+  // Remove brackets
+  {
+      "keys": ["ctrl+super+r"],
+      "command": "bh_remove_brackets"
+  },
+  { "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
+  // Convert single quote string to double quoted string and vice versa
+    // Will handle escaping or unescaping quotes within the string
+  {
+      "keys": ["ctrl+super+'"],
+      "command": "bh_key",
+      "args":
+      {
+          "lines" : true,
+          "plugin":
+          {
+              "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+              "command": "bh_modules.swapquotes"
+          }
+      }
+  },
+  // Swap brackets with another type
+  {
+      "keys": ["ctrl+super+9"],
+      "command": "swap_brackets"
+  },
+  // Switch braces to do end block
+  {
+      "keys": ["ctrl+shift+]"],
+      "command": "brace_to_do_end"
+  },
+  // Switch do end block to braces
+  {
+      "keys": ["ctrl+shift+["],
+      "command": "do_end_to_brace"
+  }
+]
