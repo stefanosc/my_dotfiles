@@ -70,6 +70,7 @@
 	"shift_tab_unindent": true,
 	"spell_check": true,
 	"tab_size": 2,
+<<<<<<< HEAD
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true,
 	//
@@ -78,13 +79,20 @@
 	"trailing_spaces_file_max_size": 1500,
 	"trailing_spaces_include_current_line": false,
 	"trailing_spaces_trim_on_save": true,
+=======
 	"trailing_spaces_file_max_size": 1500,
 	"trailing_spaces_include_current_line": false,
+>>>>>>> 0a946dffd39ef1fee1da826ffba07e7f71d44aff
 	"trailing_spaces_syntax_ignore":
 	[
 		"Diff",
 		"Markdown"
+<<<<<<< HEAD
+	]
+=======
 	],
 	"trailing_spaces_trim_on_save": true,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+>>>>>>> 0a946dffd39ef1fee1da826ffba07e7f71d44aff
 }
