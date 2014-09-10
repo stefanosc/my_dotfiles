@@ -80,11 +80,10 @@
 	"trailing_spaces_trim_on_save": true,
 	"trailing_spaces_file_max_size": 1500,
 	"trailing_spaces_include_current_line": false,
+	"trailing_spaces_trim_on_save": true,
 	"trailing_spaces_syntax_ignore":
 	[
 		"Diff",
 		"Markdown"
-	],
-	"trailing_spaces_trim_on_save": true,
-	"translate_tabs_to_spaces": true
+	]
 }
