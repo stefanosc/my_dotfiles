@@ -7,14 +7,22 @@
   {"keys": ["ctrl+shift+r"], "command": "set_file_type",
      "args": {"syntax": "Packages/Ruby/Ruby.tmLanguage"}
   },
+
+// Key bindings for Sublime built in case transform commands
   { "keys": ["super+alt+t"], "command": "title_case" },
   { "keys": ["super+alt+u"], "command": "upper_case" },
   { "keys": ["super+alt+l"], "command": "lower_case" },
+
+  // The following key binding require SideBarEnhancements plugin to work
+  // This allows to duplicate, rename, move, delete the current file with a simple shortcut
   { "keys": ["super+ctrl+shift+d"], "command": "side_bar_duplicate" },
   { "keys": ["super+ctrl+shift+r"], "command": "side_bar_rename" },
   { "keys": ["super+ctrl+shift+m"], "command": "side_bar_move" },
   { "keys": ["super+ctrl+shift+x"], "command": "side_bar_delete" },
 
+// Key bindings for Sublime built in layout commands
+
+  // increases size of left pane
   {
     "keys": ["super+alt+shift+right"],
     "command": "set_layout",
@@ -26,6 +34,7 @@
     }
   },
 
+  // increases size of right pane
   {
     "keys": ["super+alt+shift+left"],
     "command": "set_layout",
@@ -37,7 +46,8 @@
     }
   },
 
-  // Select text inside brackets
+// The following key binding require BracketHighlighter plugin to work
+  // Select text inside brackets or quotes
   {
       "keys": ["ctrl+super+s"],
       "command": "bh_key",
@@ -51,7 +61,8 @@
           }
       }
   },
-    // Select text including brackets
+
+  // Select text inside brackets or quotes including brackets or quotes
   {
       "keys": ["ctrl+shift+super+s"],
       "command": "bh_key",
@@ -66,7 +77,8 @@
           }
       }
   },
-      // Go to left bracket
+
+  // Go to left bracket or quote
   {
       "keys": ["ctrl+super+left"],
       "command": "bh_key",
@@ -81,7 +93,8 @@
           }
       }
   },
-  // Go to right bracket
+
+  // Go to right bracket or quote
   {
       "keys": ["ctrl+super+right"],
       "command": "bh_key",
@@ -96,12 +109,12 @@
           }
       }
   },
-  // Remove brackets
+
+  // Remove brackets or quotes
   {
       "keys": ["ctrl+super+r"],
       "command": "bh_remove_brackets"
   },
-  { "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
   // Convert single quote string to double quoted string and vice versa
     // Will handle escaping or unescaping quotes within the string
   {
@@ -122,6 +135,12 @@
       "keys": ["ctrl+super+9"],
       "command": "swap_brackets"
   },
+
+
+// The following key binding require TrailingSpaces plugin to work
+  { "keys": ["ctrl+super+t"], "command": "delete_trailing_spaces" },
+
+// The following key binding require Ruby Block Converter plugin to work
   // Switch braces to do end block
   {
       "keys": ["ctrl+shift+]"],
