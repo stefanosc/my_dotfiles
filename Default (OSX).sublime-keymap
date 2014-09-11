@@ -8,6 +8,9 @@
      "args": {"syntax": "Packages/Ruby/Ruby.tmLanguage"}
   },
 
+//  Change default Alignment keyboard shortcut
+  { "keys": ["super+ctrl+shift+a"], "command": "alignment" },
+
 // Key bindings for Sublime built in case transform commands
   { "keys": ["super+alt+t"], "command": "title_case" },
   { "keys": ["super+alt+u"], "command": "upper_case" },
