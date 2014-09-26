@@ -18,5 +18,7 @@ alias vi='vim'
 alias jfs='fasd -f -e subl '
 alias js='fasd -e subl '
 
+eval "$(direnv hook $0)"
+
 export PGDATA=/usr/local/var/postgres/data/
 
