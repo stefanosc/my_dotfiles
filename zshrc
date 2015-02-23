@@ -20,5 +20,12 @@ alias js='fasd -e subl '
 
 eval "$(direnv hook $0)"
 
-export PGDATA=/usr/local/var/postgres/data/
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
 
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PGDATA=/usr/local/var/postgres/data/
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export ANDROID_HOME=/Users/stefano/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/bin
