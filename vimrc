@@ -4,48 +4,56 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-repeat'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-repeat'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-speeddating'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-haml'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'godlygeek/tabular'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'pangloss/vim-javascript'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails.git'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-speeddating'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-haml'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'jgdavey/vim-blockle'
+Plugin 'godlygeek/tabular'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
 
-Bundle 'jgdavey/vim-turbux'
-Bundle 'skalnik/vim-vroom'
+Plugin 'jgdavey/vim-turbux'
+Plugin 'skalnik/vim-vroom'
 
-Bundle 'tpope/vim-vividchalk'
-Bundle 'jgdavey/vim-railscasts'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'jgdavey/vim-railscasts'
+Plugin 'tomasr/molokai'
 
-Bundle 'mileszs/ack.vim'
-Bundle 'ggreer/the_silver_searcher'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'goldfeld/vim-seek'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'duff/vim-bufonly'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'mattn/gist-vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'ggreer/the_silver_searcher'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'goldfeld/vim-seek'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'duff/vim-bufonly'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'mattn/gist-vim'
+Plugin 'airblade/vim-gitgutter'
 
 syntax on
 filetype plugin indent on
 
+"vim airline setting to always show status
+set laststatus=2
+
 set visualbell
+set nu
 set wildmenu
 set wildmode=list:longest,full
 set splitright
@@ -93,8 +101,10 @@ endfunction
 au BufWritePost .vimrc so ~/.vimrc
 autocmd QuickFixCmdPost *grep* cwindow
 
-colorscheme vividchalk
+colorscheme solarized
+highlight clear SignColumn
 
+let g:airline_theme='powerlineish'
 let mapleader = ","
 vmap D y'>p
 imap <c-l> <space>=><space>
