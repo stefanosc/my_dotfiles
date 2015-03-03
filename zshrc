@@ -10,8 +10,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# source "/usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh"
 
+# Customize to your needs...
+export CLICOLOR=1
 alias ls='ls -hGF'
 alias ll='ls -hlAGF'
 alias vi='vim'
